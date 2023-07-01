@@ -12,6 +12,7 @@ tzdata = "==2023.3"
 django-crispy-forms = "==2.0"
 crispy-bootstrap4 = "*"
 django-allauth = "==0.54.0"
+environs = {version = "==8.0.0", extras = ["django"]}
 
 [dev-packages]
 
