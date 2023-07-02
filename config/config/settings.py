@@ -34,6 +34,8 @@ env = Env()
 env.read_env()
 SECRET_KEY = env("DJANGO_SECRET_KEY")
 DEBUG = env.bool("DJANGO_DEBUG")
+DEFAULT_FROM_EMAIL = 'admin@djangobookstore.com'
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 
 # Application definition
 
@@ -50,6 +52,7 @@ INSTALLED_APPS = [
     'allauth',
     'allauth.account',
     'allauth.socialaccount',
+    'django.contrib.sites',
     # Local
     'accounts',
     'pages',
