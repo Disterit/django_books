@@ -8,5 +8,6 @@ urlpatterns = [
     path('accounts/', include('allauth.urls')),
 # Local apps
     path('', include('pages.urls')),
+    path('books/', include('books.urls')),
 ]
 
