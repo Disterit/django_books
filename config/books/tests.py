@@ -14,7 +14,7 @@ class BookTests(TestCase):
             password='testpass123'
         )
         self.special_permission = Permission.objects.get(
-            codename='special_status') # new
+            codename='special_status')
         self.book = Book.objects.create(
             title='Harry Potter',
             author='JK Rowling',
